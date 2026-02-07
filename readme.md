@@ -1,7 +1,17 @@
 # Zipper – Gestion et sauvegarde de plugins WordPress
-
 [![Licence : GPL v2](https://img.shields.io/badge/Licence-GPL%20v2-blue.svg)](LICENSE)
-[![WordPress compatible](https://img.shields.io/badge/WordPress-5.0%2B-brightgreen.svg)](https://wordpress.org/)
+[![WordPress compatible](https://img.shields.io/badge/WordPress-6.6%2B-brightgreen.svg)](https://wordpress.org/)
+[![PHP compatible](https://img.shields.io/badge/PHP-8.3%2B-8892BF.svg)](https://www.php.net/)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](#)
+
+## ℹ️ Informations
+
+- **Nom du plugin** : Zipper
+- **Version actuelle** : 1.0.0
+- **Compatibilité WordPress** : 6.6+
+- **Compatibilité PHP** : 8.3+
+- **Licence** : GPL v2 ou ultérieure
+
 
 Zipper est un plugin WordPress conçu pour les administrateurs et développeurs souhaitant **sauvegarder, distribuer et gérer leurs plugins** directement depuis l’interface d’administration.
 Il permet de **créer des archives ZIP de plugins actifs ou inactifs**, pour la **sauvegarde avant mise à jour**, la **migration**, la **distribution de plugins personnalisés** ou l’**archivage sécurisé**.
