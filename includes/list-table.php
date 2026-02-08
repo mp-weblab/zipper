@@ -15,8 +15,18 @@ function zipper_get_stored_zips() {
     }
     foreach ( glob( ZIPPER_UPLOAD_DIR . '/*.zip' ) as $path ) {
         if ( is_file( $path ) ) {
+            $basename = basename( $path );
+            $version = '';
+
+            // Extraire la version si le nom contient -v
+            // Exemple : woocommerce-20260208-001846-v10-5-0.zip
+            if ( preg_match('/-v([0-9\-]+)\.zip$/', $basename, $matches) ) {
+                $version = str_replace('-', '.', $matches[1]); // 10.5.0
+            }
+
             $files[] = array(
-                'name' => basename( $path ),
+                'name' => $basename, // garder le nom intact
+                'version' => $version,
                 'path' => $path,
                 'size' => filesize( $path ),
                 'time' => filemtime( $path ),
@@ -43,6 +53,7 @@ function zipper_render_stored_zips_table() {
             <thead>
                 <tr>
                     <th><?php esc_html_e( 'Fichier', 'zipper' ); ?></th>
+                    <th><?php esc_html_e( 'Version', 'zipper' ); ?></th>
                     <th><?php esc_html_e( 'Taille', 'zipper' ); ?></th>
                     <th><?php esc_html_e( 'Créé le', 'zipper' ); ?></th>
                     <th><?php esc_html_e( 'Actions', 'zipper' ); ?></th>
@@ -52,6 +63,7 @@ function zipper_render_stored_zips_table() {
                 <?php foreach ( $files as $f ) : ?>
                 <tr>
                     <td><?php echo esc_html( $f['name'] ); ?></td>
+                    <td><?php echo esc_html( $f['version'] ); ?></td>
                     <td><?php echo size_format( $f['size'], 2 ); ?></td>
                     <td><?php echo esc_html( date_i18n( get_option('date_format') . ' ' . get_option('time_format'), $f['time'] ) ); ?></td>
                     <td>
@@ -91,4 +103,3 @@ function zipper_render_stored_zips_table() {
 
     <?php
 }
-
