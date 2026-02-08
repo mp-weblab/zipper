@@ -16,6 +16,11 @@
 Zipper est un plugin WordPress conçu pour les administrateurs et développeurs souhaitant **sauvegarder, distribuer et gérer leurs plugins** directement depuis l’interface d’administration.
 Il permet de **créer des archives ZIP de plugins actifs ou inactifs**, pour la **sauvegarde avant mise à jour**, la **migration**, la **distribution de plugins personnalisés** ou l’**archivage sécurisé**.
 
+## Notes de l’auteur
+
+Ce plugin est distribué gratuitement dans un esprit de partage.
+Merci de ne pas vendre ou monétiser le plugin sous une forme quelconque sans autorisation.
+
 ---
 
 ## ✨ Fonctionnalités
