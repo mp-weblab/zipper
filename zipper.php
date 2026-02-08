@@ -5,7 +5,11 @@
  * Description: Zipper rapidement un ou plusieurs plugins et gérer les .zip (download / delete). Enregistre les fichiers .zip dans wp-content/uploads/zipper/.
  * Version: 1.0.0
  * Author: mp-weblab
+ * Site: https://mp-weblab.com
  * Licence : GPLv2+
+ * Note de l'auteur :
+ * Ce plugin est distribué gratuitement dans un esprit de partage.
+ * Merci de ne pas le vendre ou monétiser sous une forme quelconque.
  * Text Domain: zipper
  */
 
