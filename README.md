@@ -5,3 +5,22 @@
 [![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](#)
 
 Plugin WordPress permettant de créer, gérer et télécharger des archives ZIP de plugins directement depuis l’interface d’administration. Idéal pour la sauvegarde, la migration et la distribution de plugins.
+
+
+---
+
+## 🔧 Installation
+
+1. Téléchargez ou clonez le dépôt :
+
+```bash
+git clone https://github.com/mp-weblab/zipper.git
+```
+
+2. Copiez le dossier `zipper` dans :
+
+```
+wp-content/plugins/
+```
+
+3. Activez le plugin depuis **Extensions → Extensions installées**
