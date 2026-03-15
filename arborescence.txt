@@ -1,0 +1,26 @@
+📄 arborescence.txt
+📁 assets
+│   📁 js
+│   │   📜 script.js
+📁 includes
+│   🐘 admin-page.php
+│   🐘 list-table.php
+│   🐘 zip-acts.php
+🐘 index.php
+🐘 uninstall.php
+🐘 zipper.php
+
+zipper/
+│
+├─ assets/
+│   └─ js/
+│       └─ script.js     (interactions UI, AJAX si besoin)
+│
+├─ includes/
+│   ├─ admin-page.php    (page Outils → Zipper)
+│   ├─ list-table.php    (liste des ZIP stockés)
+│   └─ zip-acts.php      (zip, download, delete actions)
+│
+├─ index.php             (sécurité)
+├─ uninstall.php         (supprime le dossier uploads/zipper)
+└─ zipper.php            (plugin loader)
